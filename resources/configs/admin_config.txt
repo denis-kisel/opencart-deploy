@@ -1,0 +1,32 @@
+<?php
+// HTTP
+define('HTTP_SERVER', '{domain}/{oc_v}/admin/');
+define('HTTP_CATALOG', '{domain}/{oc_v}/');
+
+// HTTPS
+define('HTTPS_SERVER', '{domain}/{oc_v}/admin/');
+define('HTTPS_CATALOG', '{domain}/{oc_v}/');
+
+// DIR
+define('DIR_APPLICATION', '{dir_route}/{oc_v}/admin/');
+define('DIR_SYSTEM', '{dir_route}/{oc_v}/system/');
+define('DIR_IMAGE', '{dir_route}/{oc_v}/image/');
+define('DIR_LANGUAGE', '{dir_route}/{oc_v}/admin/language/');
+define('DIR_TEMPLATE', '{dir_route}/{oc_v}/admin/view/template/');
+define('DIR_CONFIG', '{dir_route}/{oc_v}/system/config/');
+define('DIR_CACHE', '{dir_route}/{oc_v}/system/storage/cache/');
+define('DIR_DOWNLOAD', '{dir_route}/{oc_v}/system/storage/download/');
+define('DIR_LOGS', '{dir_route}/{oc_v}/system/storage/logs/');
+define('DIR_MODIFICATION', '{dir_route}/{oc_v}/system/storage/modification/');
+define('DIR_UPLOAD', '{dir_route}/{oc_v}/system/storage/upload/');
+define('DIR_CATALOG', '{dir_route}/{oc_v}/catalog/');
+define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
+
+// DB
+define('DB_DRIVER', '{db_driver}');
+define('DB_HOSTNAME', '{db_host}');
+define('DB_USERNAME', '{db_user}');
+define('DB_PASSWORD', '{db_pass}');
+define('DB_DATABASE', '{db_db}');
+define('DB_PORT', '{db_port}');
+define('DB_PREFIX', 'oc_');

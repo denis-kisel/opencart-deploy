@@ -1,0 +1,24 @@
+#!/bin/bash
+#all
+#OC_VS=(2000 2010 2011 2020 2031 2101 2102 2200 2300 2301 2302 3000 3011 3012 3020)
+
+#medium
+OC_VS=(2000 2010 2101 2200 2302 3000)
+
+DB_DRIVER=mysqli
+DB_HOSTNAME=localhost
+DB_USER=root
+DB_PASS=
+DB_PORT=3306
+
+# Prefix for database name. Not table prefix!
+PREFIX_DB=opencart_
+
+DOMAIN=http://localhost/oc.testplace
+REWRITE_BASE=/oc.testplace/
+
+FTP_STATUS=1
+FTP_USERNAME=vagrant
+FTP_PASSWORD=vagrant
+FTP_PORT=21
+FTP_HOSTNAME=192.168.0.249
