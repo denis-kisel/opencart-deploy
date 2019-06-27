@@ -1,4 +1,11 @@
 # Opencart Quick Deploy
+Quick deploy some or all versions opencart. 
+
+Functional include:
+* Create/Update files
+* Create/Update DBs
+* Automate config files, ftp, htaccess
+* Specify opencart version(s) and optional settings
 
 ## Supported versions
 |  2.0.x  |  2.1.x  | 2.2.x  | 2.3.x  | 3.0.x | 3.1.x |
@@ -49,6 +56,14 @@ $ cp deploy.conf.EXAMPLE deploy.conf
 # Set deploy versions by default, db connecion, domain and fpt(optional)
 $ nano deploy.conf
 ```
+
+## Available Params
+|  Param  |  Description |
+|----------|----------|
+| `v` | Versions separated by comma. Example v:2000,2302,3000 |
+| `skip_db` | Skip DB |
+| `skip_file` | Skip file |
+| `skip_config` | Skip config: config files(catalog, admin), ftp, htaccess |
 
 ## Testing
 Open the link http://domain/ in your browser and select version.
