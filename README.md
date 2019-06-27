@@ -1,40 +1,56 @@
-# Opencart-testplace
-Rapid deployment of all versions of opencart for testing extensions
+# Opencart Quick Deploy
 
-# Install
-$ cd /path/to/root-server-directory
+## Supported versions
+|  2.0.x  |  2.1.x  | 2.2.x  | 2.3.x  | 3.0.x | 3.1.x |
+|----------|----------|----------|----------|----------|----------|
+| 2000 | 2101 | 2200| 2302 | 3000 | 3100
+| 2010 |2102 | | | 3011 |
+| 2011 | | | | 3012 |
+| 2020 | | | | 3020 |
+| 2031 |
 
-$ git clone https://github.com/denis-kisel/opencart-testplace oc.testplace
+## Demo
+```bash
+$ cd proj_dir
 
-# Settings
+# Create all versions
+$ bash deploy.sh
 
-$ cd oc.testplace
+# Create/Update only files
+$ bash deploy.sh skip_db skip_config
 
-Create config file
+# Create/Update only db
+$ bash deploy.sh skip_file skip_config
 
-$ cp conf.EXAMPLE.sh conf.sh
+# Create/Update only config
+$ bash deploy.sh skip_file skip_db
 
-Change configs for your environtment:
+# Create/Update only specify version
+$ bash deploy.sh v:2000
 
-$ nano conf.sh
+# Create/Update only specify versions
+$ bash deploy.sh v:2000,2200,2302
+```
 
-# Create/update projects:
+## Install
+``` bash
+$ cd proj_dir
+$ git clone https://github.com/denis-kisel/opencart-deploy .
+```
 
-$ ./init.sh #Will create/update all versions of opencart
+## Settings
 
-$ ./init.sh v:2000,2200,3000 #Will create/update the specified versions of opencart
+```bash
+$ cd proj_dir
 
-$ ./init.sh odb #Will create/update only DB
+# Create config file
+$ cp deploy.conf.EXAMPLE deploy.conf
 
-$ ./init.sh of #Will create/update only files
+# Set deploy versions by default, db connecion, domain and fpt(optional)
+$ nano deploy.conf
+```
 
-# Example:
+## Testing
+Open the link http://domain/ in your browser and select version.
 
-Create/update datebases for opencart versions 2200, 2302, 3000
-
-$ ./init.sh v:2200,2302,3000 odb
-
-# Test
-Open the link http://yourhost/oc.testplace/ in your browser and select version.
-
-Access to the admin panel: admin/admin
+Access to the admin panel: `admin/admin`

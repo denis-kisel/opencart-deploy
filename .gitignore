@@ -1,0 +1,7 @@
+oc_deploy.conf
+/*/
+!/resources/
+!oc_deploy.conf.EXAMPLE
+!oc_deploy.sh
+!REDME.md
+!/bin/
