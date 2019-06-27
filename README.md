@@ -51,10 +51,10 @@ $ git clone https://github.com/denis-kisel/opencart-deploy .
 $ cd proj_dir
 
 # Create config file
-$ cp deploy.conf.EXAMPLE deploy.conf
+$ cp oc_deploy.conf.EXAMPLE oc_deploy.conf
 
 # Set deploy versions by default, db connecion, domain and fpt(optional)
-$ nano deploy.conf
+$ nano oc_deploy.conf
 ```
 
 ## Available Params
