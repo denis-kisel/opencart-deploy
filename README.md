@@ -116,7 +116,7 @@ $ cd /var/www/filter.loc
 $ oc-deploy
 ```
 
-Open Specify site with specify version OC:
+Open Specify site with specify version OC:  
 http://localhost/filter.loc/2000  
 ...  
 http://localhost/filter.loc/3020
