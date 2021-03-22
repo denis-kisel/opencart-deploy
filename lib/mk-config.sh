@@ -1,0 +1,1 @@
+cp /usr/local/lib/oc-deploy/resources/oc_deploy.conf.EXAMPLE oc_deploy.conf

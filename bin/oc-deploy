@@ -1,0 +1,1 @@
+bash /usr/local/lib/oc-deploy/deploy.sh $@

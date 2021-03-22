@@ -1,9 +1,9 @@
 for oc_v in ${oc_vs[*]}
 do
 	echo set configs for $oc_v
-	cp resources/configs/catalog_config.txt $oc_v/config.php
-	cp resources/configs/admin_config.txt $oc_v/admin/config.php
-	cp resources/configs/htaccess.txt $oc_v/.htaccess
+	cp $LIB_PATH/resources/configs/catalog_config.txt $oc_v/config.php
+	cp $LIB_PATH/resources/configs/admin_config.txt $oc_v/admin/config.php
+	cp $LIB_PATH/resources/configs/htaccess.txt $oc_v/.htaccess
 
 	# Catalog
 	sed -i "s/{oc_v}/$oc_v/g" $oc_v/config.php

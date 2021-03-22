@@ -4,7 +4,7 @@ do
 	rm -fR $oc_v
 	mkdir $oc_v
 	mkdir tmp
-	unzip -qq resources/archives/$oc_v.zip -d tmp
+	unzip -qq $LIB_PATH/resources/archives/$oc_v.zip -d tmp
 
 	mv tmp/*upload/* $oc_v 2>/dev/null
 	mv tmp/*/upload/* $oc_v 2>/dev/null

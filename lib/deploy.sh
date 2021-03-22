@@ -9,12 +9,14 @@ fi
 
 if [ ! -f oc_deploy.conf ]; then
     echo "oc_deploy.conf does not exists!"
+    echo "Use command to generate config: [oc-mk-deploy-conf]"
     exit 1
 fi
 
 sudo chmod -R 777 .
 
 source oc_deploy.conf
+source /usr/local/lib/oc-deploy/default.conf
 
 DIR_ROOT=$(pwd)
 
@@ -45,14 +47,14 @@ do
 done
 
 if [[ $create_files = yes ]]; then
-	source bin/file.sh
+	source $LIB_PATH/file.sh
 	sudo chmod -R 777 .
 fi
 
 if [[ $create_db = yes ]]; then
-	source bin/db.sh
+	source $LIB_PATH/db.sh
 fi
 
 if [[ $create_configs = yes ]]; then
-	source bin/config.sh
+	source $LIB_PATH/config.sh
 fi
