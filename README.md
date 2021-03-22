@@ -43,8 +43,8 @@ $ oc-deploy v:2000,2200,2302
 ## Install&Settings
 ``` bash
 # Install
-$ git clone https://github.com/denis-kisel/opencart-deploy ~/Download
-$ git cd ~/Download/opencart-deploy && sudo bash install.sh
+$ mkdir -p ~/Download/opencart-deploy && git clone https://github.com/denis-kisel/opencart-deploy ~/Download
+$ cd ~/Download/opencart-deploy && sudo bash install.sh
 
 # Settings
 $ cd proj_dir
