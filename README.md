@@ -119,7 +119,7 @@ $ oc-deploy
 Open Specify site with specify version OC:  
 http://localhost/filter.loc/2000  
 ...  
-http://localhost/filter.loc/3020
+http://localhost/filter.loc/2302
 
 Open admin panel:  
 http://localhost/filter.loc/2000/admin  
