@@ -7,8 +7,8 @@ OC_VS=(2000 2010 2101 2200 2302 3000)
 
 DB_DRIVER=mysqli
 DB_HOSTNAME=localhost
-DB_USER=root
-DB_PASS=
+DB_USER=homestead
+DB_PASS=secret
 DB_PORT=3306
 
 # Prefix for database name. Not table prefix!
@@ -21,4 +21,4 @@ FTP_STATUS=1
 FTP_USERNAME=vagrant
 FTP_PASSWORD=vagrant
 FTP_PORT=21
-FTP_HOSTNAME=192.168.0.249
+FTP_HOSTNAME=192.168.10.10

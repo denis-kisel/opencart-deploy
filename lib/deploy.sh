@@ -48,7 +48,6 @@ done
 
 if [[ $create_files = yes ]]; then
 	source $LIB_PATH/file.sh
-	sudo chmod -R 777 .
 fi
 
 if [[ $create_db = yes ]]; then

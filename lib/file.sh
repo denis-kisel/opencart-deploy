@@ -15,4 +15,5 @@ do
 
 	echo Files for opencart $oc_v is copied!
 	rm -R tmp
+	sudo chmod -R 777 $oc_v
 done
