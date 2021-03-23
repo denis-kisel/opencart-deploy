@@ -130,6 +130,7 @@ The MIT License (MIT)
 
 # Donation
 If this project help you reduce time to develop, you can give me a cup of coffee :)
+Also you can support project if you want to use framework with new versions of Opencart in the future!
 
 WebMoney:  
 USD: Z379807461542  
